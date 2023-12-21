@@ -78,6 +78,14 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.hifi_sensors.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.hifi_sensors.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
 
+# Set support hide display cutout feature
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.support_hide_display_cutout=true
+
+PRODUCT_PACKAGES += \
+    NoCutoutOverlay \
+    AvoidAppsInCutoutOverlay
+
 PRODUCT_SOONG_NAMESPACES += \
 	$(LOCAL_PATH)
 
