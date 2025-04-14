@@ -60,7 +60,7 @@ PRODUCT_COPY_FILES += \
 # DAC
 PRODUCT_PACKAGES += \
     QuadDACPanel \
-    vendor.lge.hardware.audio.dac.control@2.0-service
+    vendor.lge.hardware.audio.dac.control@2.0-service.proprietary
 
 # Light
 PRODUCT_PACKAGES += \
