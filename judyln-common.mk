@@ -14,6 +14,12 @@
 # limitations under the License.
 #
 
+# Camera configuration override
+# By default, common configuration installs Lineage/Aperture camera.
+# Set PRODUCT_NO_CAMERA to true to skip Aperture and use
+# AOSP Camera2 or custom camera solutions instead.
+PRODUCT_NO_CAMERA := false
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
